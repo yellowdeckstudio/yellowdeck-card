@@ -47,13 +47,20 @@ font-family: 'Lato', sans-serif;
 }
 
 .hero__container img{
-  height:6rem
+  height:9rem;
+  padding:1rem 1rem 1rem 1rem
 }
 
 @media screen and (max-width: 700px) {
+
+  .hero {
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
   #logo {
-    height:20%;
-    width:20%
+    height:45%;
+    width:45%
   }
   #branding {
     height:100%;
@@ -89,11 +96,10 @@ font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: 0.5s ease-out;
   padding: 5rem 1rem 5rem 1rem;
-  box-shadow: 10px 20px 20px 10px #816816;
+  box-shadow: 10px 20px 20px 10px #5a5031;
   border-radius:20px;
-
+  transition: 0.5s ease-out;
 }
 
 .services__card {
@@ -127,6 +133,8 @@ font-family: 'Lato', sans-serif;
   .services{
     background-image:url("/public/images/bgAC.png");
     background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
   }
   .services__wrapper {
     grid-template-columns: 1fr 1fr;
@@ -137,6 +145,8 @@ font-family: 'Lato', sans-serif;
   .services{
     background-image:url("/public/images/bgAC.png");
     background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;  
   }
   .services__wrapper {
     grid-template-columns: 1fr;
@@ -194,6 +204,9 @@ font-family: 'Lato', sans-serif;
 
 @media screen and (max-width: 800px) {
   .main {
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
     padding: 1rem 1rem 1rem 1rem;
   }
 
@@ -206,6 +219,7 @@ font-family: 'Lato', sans-serif;
   .main__content p {
     font-size: 2rem;
   }
+
 
   .main__content iframe {
     width:25rem; 
@@ -224,7 +238,6 @@ font-family: 'Lato', sans-serif;
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
-
   }
 
   .main__content iframe {
@@ -245,7 +258,7 @@ font-family: 'Lato', sans-serif;
 
 /* Footer CSS ------------------------------------------------*/
 .footer__container {
-  background: #f7f0cc; 
+  background: #f3ebc2; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,16 +272,22 @@ font-family: 'Lato', sans-serif;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-.footer__logo a{
-  padding:0rem 0rem 0rem 0rem
-}
-
-.footer__logo p{
+.footer__logo h1 {
+  font-family: 'Poiret One', cursive;
+  justify-content: center;
   align-items: center;
-  padding:0rem 0rem 1rem 1rem
+  font-size: 3rem;
+  padding:1rem 1rem 1rem 1rem
+
+}
+.footer__logo a{
+  font-size:10rem;
+  justify-content: center;
+  align-items: center;
+  padding:1rem 1rem 1rem 1rem
 }
 
 @media screen and (max-width: 800px) {
@@ -282,11 +301,12 @@ font-family: 'Lato', sans-serif;
 
   }
 
-  .footer__logo p{
-    font-size:0.8rem;
-    color: rgb(0, 0, 0);
-    align-items: center;
-    text-align: center;
+  .footer__logo h1 {
+    font-size: 1.5rem;
+  }
+  .footer__logo a{
+    font-size:1rem;
+
   }
 }
 
