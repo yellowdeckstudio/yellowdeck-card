@@ -249,7 +249,7 @@ font-family: 'Lato', sans-serif;
 
 @media screen and (max-width: 450px) {
   .main__content iframe {
-    width:15rem; 
+    width:20rem; 
     height:20rem;
     padding: 0rem 0rem 0rem 0rem;
   }
