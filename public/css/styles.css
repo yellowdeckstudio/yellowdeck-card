@@ -14,7 +14,6 @@ font-family: 'Lato', sans-serif;
 */
 
 *{
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,7 +26,7 @@ font-family: 'Lato', sans-serif;
 /* Hero Section------------------------------------------------------------------------------------------------------------------------------------ */
 
 .hero {
-  background-image:url("/public/images/bgAC.png");
+  background-image:url("/public/images/bg.png");
   padding: 1rem 1rem 1rem 1rem;
   background-attachment: fixed;
   background-size:cover;
@@ -71,7 +70,7 @@ font-family: 'Lato', sans-serif;
 
 /* Services Section -----------------------------------------------------*/
 .services {
-  background-image: url('/public/images/bgAC.png');
+  background-image: url('/public/images/bg.png');
   background-attachment: fixed;
   background-size:cover;
   background-repeat: no-repeat;
@@ -90,22 +89,18 @@ font-family: 'Lato', sans-serif;
 }
 
 .services__card {
+  background: #fffbf3;
   margin: 10px;
-  height: 250px;
-  width: 250px;
+  height: 230px;
+  width: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 5rem 1rem 5rem 1rem;
   box-shadow: 10px 20px 20px 10px #5a5031;
-  border-radius:20px;
+  border-radius:30px;
   transition: 0.5s ease-out;
 }
-
-.services__card {
-  background: #ffffff;
-}
-
 
 .services__card h2 {
   color:rgb(37, 5, 5);
@@ -124,14 +119,13 @@ font-family: 'Lato', sans-serif;
 
 .services__card img {
   text-align: center;
-  height:100px;
+  height:110px;
 }
 
 
 @media screen and (max-width: 1300px) {
 
   .services{
-    background-image:url("/public/images/bgAC.png");
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
@@ -143,7 +137,6 @@ font-family: 'Lato', sans-serif;
 
 @media screen and (max-width: 800px) {
   .services{
-    background-image:url("/public/images/bgAC.png");
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;  
@@ -156,7 +149,7 @@ font-family: 'Lato', sans-serif;
 
 /* About Section ------------------------------------------------------------- */
 .main {
-  background-image:url("/public/images/bgAC.png");
+  background-image:url("/public/images/bg.png");
   padding: 1rem 1rem 1rem 1rem;
   background-attachment: fixed;
   background-size:cover;
@@ -202,6 +195,32 @@ font-family: 'Lato', sans-serif;
 
 }
 
+.services__wrapper_1 {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+}
+
+.services__card_1 {
+  color:black;
+  background: #fffbf3;
+  margin: 10px;
+  height: 90px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 10px 20px 20px 10px #5a5031;
+  border-radius:10px;
+  transition: 0.5s ease-out;
+}
+
+.services__card_1 a{
+  font-size:1.4rem;
+  font-family: 'Lato', sans-serif;
+
+}
+
 @media screen and (max-width: 800px) {
   .main {
     background-attachment: fixed;
@@ -232,9 +251,9 @@ font-family: 'Lato', sans-serif;
 }
 
 
+
 @media screen and (max-width: 930px) {
   .main {
-    background-image:url("/public/images/bgAC.png");
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
@@ -247,11 +266,19 @@ font-family: 'Lato', sans-serif;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 530px) {
   .main__content iframe {
     width:20rem; 
     height:20rem;
     padding: 0rem 0rem 0rem 0rem;
+  }
+  .services__wrapper_1 {
+    grid-template-columns: 1fr;
+  }
+
+  .services__card_1 {
+    height: 100px;
+    width: 280px;
   }
 }
 
@@ -272,7 +299,6 @@ font-family: 'Lato', sans-serif;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
 }
 
 .footer__logo h1 {
@@ -284,7 +310,7 @@ font-family: 'Lato', sans-serif;
 
 }
 .footer__logo a{
-  font-size:10rem;
+  font-size:1.5rem;
   justify-content: center;
   align-items: center;
   padding:1rem 1rem 1rem 1rem
@@ -298,22 +324,13 @@ font-family: 'Lato', sans-serif;
     align-items: center;
     text-align: center;
     margin: 0 auto;
-
   }
 
   .footer__logo h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight:bold;
   }
   .footer__logo a{
-    font-size:1rem;
-
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .footer__link--items {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
+    font-size:1.4rem;
   }
 }
