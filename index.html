@@ -17,9 +17,12 @@
       body {
         background-image: url("https://yellowdeckstudio.github.io/yellowdeck-card/public/images/bgAC.png");
         background-attachment: fixed;
+        /*
         background-size:cover;
         background-repeat: no-repeat;
-      }
+      */
+        background-size:contain;
+       }
       </style>
  
  </head>
@@ -74,11 +77,17 @@
       <div class="main__container">
         <div class="main__content">
         
-         <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=yellow%20deck%20studio%20Faridabad+(yellow%20deck%20studio)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.embed-map.net/'>google map wordpress widget</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=fcc530ad6783d6c92d557b05411965f9cc6bb260'></script>
+          <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=yellow%20deck%20studio%20Faridabad+(yellow%20deck%20studio)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.embed-map.net/'>google map wordpress widget</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=fcc530ad6783d6c92d557b05411965f9cc6bb260'></script>
 
-                                 
-          <p><mark>G-84/3, Laxmi Park, Nangloi</mark></p>
-          <p><mark>New Delhi - 110041</mark></p>       
+          <div class="services">      
+            <div class="services__wrapper_1"> 
+              <div class="services__card_1">
+                <a>G-84/3, Laxmi Park, Nangloi</a>
+                <a>New Delhi - 110041</a>
+              </div>
+            </div> 
+          </div>
+   
         </div>
       </div>
     </div>
@@ -86,10 +95,8 @@
     <!-- Footer Section -->
     <div class="footer__container">
       <div class="footer__logo">
-        <h1>#smilewhileyoustayhome</h1>
+        <h1 id="footer__logo">#smilewhileyoustayhome</h1>
         <a id="footer__logo">© yellowdeckstudio 2022</a>
       </div>
-
-    <!-- <script src="app.js"></script> -->
   </body>
 </html>
